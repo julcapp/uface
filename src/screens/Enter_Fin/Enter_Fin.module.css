@@ -1,0 +1,146 @@
+.base_container {
+    margin-top: 50px;
+}
+
+.image {
+    margin: 14px 25px 25px 25px;
+}
+
+.log_in {
+    display: grid;
+    margin-top: 66px;
+    margin-bottom: 80px;
+    justify-items: center;
+}
+
+.log_in_with {
+    font-family: 'Open Sans',sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 20px;
+    color: #828088;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+    background:none;
+    border:none;
+    display: block;
+}
+
+.log_in_with:hover, .log_in_with:visited:hover {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.log_in_with:visited {
+    text-decoration: none;
+    color: #828088;
+}
+
+.regBtn {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 24px;
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+.regBtn:visited:hover, .regBtn:hover {
+   opacity: 0.8;
+   font-weight: 00;
+   text-decoration: underline;
+}
+
+.regBtn:visited{
+    text-decoration: none;
+    color: #2C2C2C;
+}
+
+.enterBtn {
+    padding: 36px;
+}
+
+.sber_icon {
+    margin-right: 8px;
+}
+
+.log_in_cber {
+    margin-top: 15px;
+    display: inline-flex;
+}
+
+@media (max-width: 380px)
+ { 
+    .faceelook, .tsuLogo {
+        width: 40%;
+    }
+ }
+
+ @media (max-width: 420px)
+ { 
+    .faceelook, .tsuLogo {
+        width: 50%;
+    }
+ }
+
+
+ /* useEffect(() => {
+    init()
+    const getmmpm = getMobileOperatingSystem
+    if (getm === "iOS") {
+        ios = true;
+    }
+}, [])
+
+{
+    !ios ? (
+        <div>
+            <Link to='#' className={css.buttons} onClick={
+                () => {
+                    setNoPhoto(true)
+                    setIsCamera(true)
+                    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                        navigator.mediaDevices
+                            .getUserMedia({ video: true })
+                            .then(function (stream) {
+                                camera.current.srcObject = stream;
+                                camera.current.play();
+                                const { width, height } = stream.getTracks()[0].getSettings();
+                                setCameraSize({
+                                    width,
+                                    height
+                                });
+                            });
+                    }
+                }
+            }>Сфотографироваться</Link>
+            <input
+                type="file"
+                accept="video/*"
+                capture="camera"
+                onChange={onChangeFile}
+                style={{ display: 'none' }}
+            ></input>
+        </div>
+    ) :
+        (<Link to='#' className={css.buttons} onClick={
+            () => {
+                setNoPhoto(true)
+                setIsCamera(true)
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    navigator.mediaDevices
+                        .getUserMedia({ video: true })
+                        .then(function (stream) {
+                            camera.current.srcObject = stream;
+                            camera.current.play();
+                            const { width, height } = stream.getTracks()[0].getSettings();
+                            setCameraSize({
+                                width,
+                                height
+                            });
+                        });
+                }
+            }
+        }>Сфотографироваться</Link>)
+} */
